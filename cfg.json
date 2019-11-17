@@ -1,0 +1,30 @@
+{
+    "debug": true,
+    "tunnel_ip": "10.99.0.2/24",
+    "serf_client": {
+        "name" : "",
+        "rpc_addr": "127.0.0.1",
+        "rpc_port": 7373,
+        "event_len": 500,
+        "interval": 60,
+        "close_agent": true
+    },
+    "serf_agent":{
+        "enable": true,
+        "event_len": 500,
+        "rpc_addr": "127.0.0.1",
+        "rpc_port": 7373,
+        "bind_addr": "0.0.0.0",
+        "bind_port": 7946,
+        "advertise_addr": "",
+        "advertise_port": 7946
+    },
+    "member_list":[
+        "10.16.43.76:7946"
+    ],
+    "ping": {
+        "interval": 3,
+        "timeout": 3,
+        "lostpercent": 30
+    }
+}
